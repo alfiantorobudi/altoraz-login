@@ -13,7 +13,7 @@ class Admin extends CI_Controller
     public function index()
     {
         // ngambil data dari user, berdasarkan email yang diinput do form login
-        $data['title'] = 'Dashboard';
+        $data['title'] = 'Dashboard Admin';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 
